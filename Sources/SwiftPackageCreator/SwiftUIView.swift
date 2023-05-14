@@ -9,8 +9,9 @@ import SwiftUI
 
 // since this is package, u need to remember that u have to add public so others can use it and also add it somewhere else
 
+@available(iOS 13.0.0, *)
+@available(macOS 10.15, *)
 public struct SwiftUIView: View {
-    @available(macOS 10.15, *)
     public var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -18,8 +19,9 @@ public struct SwiftUIView: View {
     
 }
 
+@available(iOS 13.0.0, *)
+@available(macOS 10.15, *)
 struct SwiftUIView_Previews: PreviewProvider {
-    @available(macOS 10.15, *)
     static var previews: some View {
         SwiftUIView()
     }
